@@ -46,8 +46,7 @@ section {
 
 
 .nav-item span {
-    /* color: rgb(84, 61, 2); */
-    color: white;
+    color: rgb(0, 0, 128);
     font-weight: 500;
     font-size: 18px;
 }
@@ -100,7 +99,7 @@ section {
 }
 
 
-.text-navy h1, h3, p, a, {
+h1.text-navy, h3.text-navy, a.text-navy, p.text-navy {
     color: rgb(0, 0, 128);
 }
 
