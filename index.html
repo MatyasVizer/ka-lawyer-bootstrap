@@ -200,6 +200,44 @@
                         </div>
                     </div>
 
+                    <!-- Contact form -->
+
+                    <div class="col-md-8 mx-auto">
+                        <form id="confirmationForm" action="https://formsubmit.co/adfgadfgadf" method="POST"
+                        class="row g-4">
+
+                        <!-- Honeypot -->
+
+                        <input type="text" name="_honey" style="display: none;">
+
+                        <!-- Captcha -->
+
+                        <input type="hidden" name="_captcha" value="false">
+
+                        <input type="hidden" name="_next" value="https://www.malerei-gal.at/success.html">
+
+
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control rounded-3" name="vollständiger Name"
+                                placeholder="Vor- und Zuname" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="email" class="form-control rounded-3" name="E-mail" placeholder="E-mail"
+                                required>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <input type="text" class="form-control rounded-3" name="Betreff" placeholder="Betreff"
+                                required>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <textarea class="form-control rounded-3" id="confirmationForm" name="Nachricht" cols="30"
+                                rows="10" placeholder="Ihre Nachricht geht hier..." required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-main" type="submit"><span>Senden</span></button>
+                        </div>
+                    </form>
+                    </div>
 
                     <!-- Footer part -->
 
