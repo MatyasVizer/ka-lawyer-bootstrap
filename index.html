@@ -17,13 +17,17 @@
 
 <body>
 
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/hu_HU/sdk.js#xfbml=1&version=v13.0"
+        nonce="CPVj9EYS"></script>
+
     <!-- Navbar -->
 
-    <nav id="navbar" class="navbar navbar-expand-lg bg-light navbar-light text-navy fixed-top">
+    <nav id="navbar" class="navbar navbar-expand-lg bg-white navbar-light text-navy fixed-top">
         <div class="container">
-            <a href="#" class="navbar-brand">
-                <img src="/img/navbar-logo.png" alt="KA ügyvédi Iroda" class="img-fluid img-responsive"
-                    style="width: 50px; height: 50px;">
+            <a href="#" class="navbar-brand p-0 m-0">
+                <img src="/img/logoblue.jpg" alt="KA ügyvédi Iroda" class="img-fluid img-responsive" style="">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,13 +36,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a href="#" class="nav-link"><span>Bemutatkozás</span></a>
+                        <a href="#about" class="nav-link"><span>Bemutatkozás</span></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link"><span>Szakterületek</span></a>
+                        <a href="#services" class="nav-link"><span>Szakterületek</span></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link"><span>Elérhetőség</span></a>
+                        <a href="#contacts" class="nav-link"><span>Elérhetőségek</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#form" class="nav-link"><span>Kapcsolatfelvétel</span></a>
                     </li>
                 </ul>
             </div>
@@ -56,7 +63,7 @@
             <div class="container text-white text-center">
                 <div class="row">
                     <div class="col-12 justify-content-center">
-                        <h1 style="font-size: 10vh;">dr. Kazsimérszki Alida ügyvéd</h1>
+                        <h1 style="font-size: 5vh;">Dr. Kazsimérszki Alida ügyvéd</h1>
                     </div>
                 </div>
                 <div class="row">
@@ -76,19 +83,19 @@
                 <h1 class="p-2">Bemutatkozás</h1>
                 <div class="divider"></div>
                 <div class="container p-3 hero-2 ">
-                    <div class="row align-items-center mb-5">
+                    <div class="row align-items-center mb-5 card-shadow2">
                         <div class="col-lg-7 order-2 order-lg-1 p-3">
                             <h2 class="font-weight-heavy"></h2>
-                            <p class="mb-4 text-left">Dr. Kazsimérszki Alida egyéni ügyvéd vagyok.
-                                Jogi diplomámat 1995-ben szereztem meg a Miskolci Egyetem Állam- és Jogtudományi Karán. <br>
+                            <p class="mb-4">Dr. Kazsimérszki Alida egyéni ügyvéd vagyok.
+                                Jogi diplomámat 1995-ben szereztem meg a Miskolci Egyetem Állam- és Jogtudományi Karán.
+
                                 Tanulmányaimat emellett a Hollandiai Nijmegen Állam- és Jogtudományi Karán, valamint az
-                                Egyesült Királyságban, Bath-ban végeztem. <br>
+                                Egyesült Királyságban, Bath-ban végeztem.
                                 Az eredményes szakvizsgát, illetve Cambridge-i és Oxfordi angol nyelvvizsgát követően
                                 ügyészségi fogalmazóként, majd ügyészként kezdtem dolgozni a Győri Városi Ügyészségen.
-                                2003 óta tevékenykedem ügyvédként, jelenleg Szentendrén és vonzáskörzetében. <br>
+                                2003 óta tevékenykedem ügyvédként, jelenleg Szentendrén és vonzáskörzetében.
                                 Elsősorban peren kívüli jogi képviselettel, ingatlanjoggal, társasági joggal,
-                                családjoggal, öröklési joggal kapcsolatban kereshetnek ügyfeleim
-                            </p>
+                                családjoggal, öröklési joggal kapcsolatban kereshetnek ügyfeleim.</p>
                         </div>
                         <div class="col-lg-5 px-0 mx-auto order-1 order-lg-2 card-shadow"><img class="hero2"
                                 src="/img/about-figure.jpg" alt="" class="img-fluid mb-4 mb-lg-0">
@@ -102,8 +109,9 @@
 
         <!-- Services -->
 
-        <section id="services" class="text-center text-white bg-cover" style="background-image: url(/img/banner2gs.jpg);">
-            <div class="overlay2"></div>
+        <section id="services" class="text-center text-white bg-cover"
+            style="background-image: url(/img/banner2gs.jpg);">
+            <div class="overlay1"></div>
             <div class="container px-3">
                 <div class="row">
                     <div class="col-12 section-intro text-center">
@@ -112,22 +120,25 @@
                     </div>
                 </div>
                 <div class="row gx-4 gy-5">
-                    <div class="col-md-3 feature">
+                    <div class="col-md-3 feature text-justify">
                         <div class="icon">
                             <img src="/icon/company.png" alt="">
                         </div>
                         <h3 class="mt-4 mb-3">Társasági jog</h3>
-                        <p>Cégalapítás, társasági szerződés módosítása, törzstőke felemelése és leszállítása, céges
-                            követelések érvényesítése. <br> Vállalkozási és megbízási szerződések készítése.
+                        <p class="mx-4">Cégalapítás, társasági szerződés módosítása, törzstőke felemelése és
+                            leszállítása, céges
+                            követelések érvényesítése. Vállalkozási és megbízási szerződések készítése.
                         </p>
                     </div>
                     <div class="col-md-3 feature">
                         <div class="icon">
                             <img src="/icon/realestate.png" alt="">
                         </div>
-                        <h3 class="mt-4 mb-3">Ingatlanokkal kapcsolatos ügyek</h3>
-                        <p>Adásvételi szerződés, ajándékozási szerződés, csereszerződés, bérleti szerződés. <br> Használati
-                            megállapodás, haszonélvezeti jog alapítása, földhivatalok és más hatóságok előtti jogi képviselet ellátása,
+                        <h3 class="mt-4 mb-3">Ingatlanjog</h3>
+                        <p class="mx-4">Adásvételi szerződés, ajándékozási szerződés, csereszerződés, bérleti szerződés.
+                            Használati
+                            megállapodás, haszonélvezeti jog alapítása, földhivatalok és más hatóságok előtti jogi
+                            képviselet ellátása,
                             ingatlanra vonatkozó jogok és kötelezettségek bejegyeztetése és töröltetése iránti eljárás.
                         </p>
                     </div>
@@ -136,10 +147,10 @@
                             <img src="/icon/society.png" alt="">
                         </div>
                         <h3 class="mt-4 mb-3">Családjog</h3>
-                        <p>Peren kívüli jogi képviselet, ennek során bontóperi egyezség készítése, közreműködés a
-                            megegyezés érdekében. <br>
-                            Gyermekelhelyezéssel, kapcsolattartással, gyermektartásdíjjal, házassági vagyonjoggal
-                            kapcsolatos tanácsadás, okiratok szerkesztése. <br>
+                        <p class="mx-4">Peren kívüli jogi képviselet, ennek során bontóperi egyezség készítése,
+                            közreműködés a megegyezés érdekében.
+                            Gyermekelhelyezéssel, kapcsolattartással, gyermektartás-díjjal, házassági vagyonjoggal
+                            kapcsolatos tanácsadás, okiratok szerkesztése.
                             Házassági szerződés készítése. Gondnoksági ügyek ellátása.
                         </p>
                     </div>
@@ -148,8 +159,9 @@
                             <img src="/icon/death.png" alt="">
 
                             <h3 class="mt-4 mb-3">Öröklési jog</h3>
-                            <p>Végrendelet, halál esetére szóló ajándékozás, Öröklési szerződés szerkesztése. <br>
-                                Jogi képviselet és tanácsadás hagyatéki ügyekben, közjegyző előtti eljárás. <br>
+                            <p class="mx-4">Végrendelet, halál esetére szóló ajándékozás, Öröklési szerződés
+                                szerkesztése.
+                                Jogi képviselet és tanácsadás hagyatéki ügyekben, közjegyző előtti eljárás.
                                 Kötelesrész, lemondás öröklésről, hagyatéki tartozások, ági öröklés.
                             </p>
                         </div>
@@ -165,27 +177,60 @@
                 <div class="row">
                     <div class="col-12 section-intro text-center">
                         <h1 class="pb-1">Elérhetőségek</h1>
-                        <div class="divider2"></div>
+                        <div class="divider"></div>
                     </div>
                 </div>
                 <div class="row gx-4 gy-5">
-                    <div class="col-md-6 feature">
+                    <div class="col-md-6">
                         <div class="icon">
                             <img src="/icon/phone.png" alt="">
                         </div>
                         <h3 class="mt-4 mb-3">Telefonszám</h3>
-                        <p>+36205708638 
+                        <p>Keressen bizalommal az alábbi telefonszámon!
                         </p>
+                        <a href="tel:+36205708638">+36205708638</a>
                     </div>
-                    <div class="col-md-6 feature">
+                    <div class="col-md-6">
+                        <div class="icon">
+                            <img src="/icon/email.png" alt="">
+                        </div>
+                        <h3 class="mt-4 mb-3">E-mail cím</h3>
+                        <p>Küldje el az üzenetét, vagy kérdését a következő email címre:
+                        </p>
+                        <a href="mailto: iroda@drkazsimerszkialida.hu">iroda@drkazsimerszkialida.hu</a>
+                    </div>
+                </div>
+                <div class="row gx-4 gy-5 pt-5">
+                    <div class="col-md-6">
                         <div class="icon">
                             <img src="/icon/map.png" alt="">
 
-                            <h3 class="mt-4 mb-3">Iroda Helyszíne</h3>
-                            <p>
-                            </p>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2686.726126576072!2d19.057159315463654!3d47.67031659156779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741d66e05825189%3A0x290812271921c7b4!2zU3plbnRlbmRyZSwgS8OhbHbDoXJpYSDDunQgMzMtMS4gZW1lbGV0LCAyMDAw!5e0!3m2!1shu!2shu!4v1651852299150!5m2!1shu!2shu" width="400" height="400" style="border:20;" allowfullscreen="false" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <h3 class="mt-4 mb-3">Irodám helyszíne</h3>
+                            <p></p>
+                        </div>
+                        <div class="map-responsive card-shadow2">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2686.726126576072!2d19.057159315463654!3d47.67031659156779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741d66e05825189%3A0x290812271921c7b4!2zU3plbnRlbmRyZSwgS8OhbHbDoXJpYSDDunQgMzMtMS4gZW1lbGV0LCAyMDAw!5e0!3m2!1shu!2shu!4v1651852299150!5m2!1shu!2shu"
+                                width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
 
+                    </div>
+                    <div class="col-md-6">
+                        <div class="icon contacts">
+                            <img src="/icon/facebook.png" alt="">
+                        </div>
+                        <h3 class="mt-4 mb-3">Facebook</h3>
+                        <p></p>
+                        <div class="fb-page mx-2 card-shadow2"
+                            data-href="https://www.facebook.com/Dr-Kazsim%C3%A9rszki-Alida-egy%C3%A9ni-%C3%BCgyv%C3%A9d-807148799408579"
+                            data-tabs="timeline" data-width="600" data-height="650" data-small-header="false"
+                            data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                            <blockquote
+                                cite="https://www.facebook.com/Dr-Kazsim%C3%A9rszki-Alida-egy%C3%A9ni-%C3%BCgyv%C3%A9d-807148799408579"
+                                class="fb-xfbml-parse-ignore"><a
+                                    href="https://www.facebook.com/Dr-Kazsim%C3%A9rszki-Alida-egy%C3%A9ni-%C3%BCgyv%C3%A9d-807148799408579">Dr.
+                                    Kazsimérszki Alida egyéni ügyvéd</a></blockquote>
                         </div>
                     </div>
                 </div>
@@ -193,74 +238,76 @@
         </section>
 
 
-        <section class="bg-cover text-white hero-section mt-0 pt-1"
-        style="background-image: url(/img/banner2gs.jpg);">
-        <div class="overlay2"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 section-intro text-center">
-                    <h1>Kapcsolatfelvétel</h1>
-                    <div class="divider2"></div>
-                    <!-- <p></p> -->
+        <section id="form" class="bg-cover text-white contact-section p-5"
+            style="background-image: url(/img/banner2gs.jpg);">
+            <div class="overlay1"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 section-intro text-center">
+                        <h1>Kapcsolatfelvétel</h1>
+                        <div class="divider2"></div>
+                        <p>Írja le röviden miben tudok segíteni!</p>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 mx-auto">
-                    <form id="confirmationForm" action="https://formsubmit.co/adfgadfgadf" method="POST"
-                    class="row g-4">
+                <div class="row">
+                    <div class="col-md-12 mx-auto">
+                        <form id="confirmationForm" action="https://formsubmit.co/iroda@drkazsimerszkialida.hu"
+                            method="POST" class="row g-4">
 
-                    <!-- Honeypot -->
+                            <!-- Honeypot -->
 
-                    <input type="text" name="_honey" style="display: none;">
+                            <input type="text" name="_honey" style="display: none;">
 
-                    <!-- Captcha -->
+                            <!-- Captcha -->
 
-                    <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_captcha" value="false">
 
-                    <input type="hidden" name="_next" value="https://www.malerei-gal.at/success.html">
+                            <input type="hidden" name="_next" value="https://www.malerei-gal.at/success.html">
 
 
-                    <div class="form-group col-md-6">
-                        <input type="text" class="form-control rounded-3" name="Teljes név"
-                            placeholder="Vezeték- és keresztnév" required>
+                            <div class="form-group col-md-4">
+                                <input type="text" class="form-control rounded-3" name="Teljes név"
+                                    placeholder="Vezeték- és keresztnév" required>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <input type="email" class="form-control rounded-3" name="Feladó"
+                                    placeholder="Az ön E-mail címe" required>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <input type="tel" class="form-control rounded-3" name="Telefonszám"
+                                    placeholder="Az ön telefonszáma" required>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <input type="text" class="form-control rounded-3" name="Tárgy" placeholder="Tárgy"
+                                    required>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <textarea class="form-control rounded-3" id="confirmationForm" name="Üzenet" cols="30"
+                                    rows="10" placeholder="Az Ön üzenete..." required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn btn-main text-white" type="submit"><span>Küldés</span></button>
+                            </div>
+                        </form>
+                        <div class="row bg-transparent pt-5 mt-5 text-white text-center">
+                            <div class="col-md-6">
+                                <a href="https://github.com/MatyasVizer"
+                                    onclick="javascript:windows.open('link', [options]);" class="link-light">Copyright
+                                    ® 2022 Mátyás Vizér</a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="https://dr.kazsimerszkialida.hu/" target="_blank" type="application/pdf"
+                                    rel="noopener noreferrer" class="link-light">
+                                    Adatvédelmi nyilatkozat
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-group col-md-6">
-                        <input type="email" class="form-control rounded-3" name="Feladó" placeholder="Az Ön E-mail címe"
-                            required>
-                    </div>
-                    <div class="form-group col-md-12">
-                        <input type="text" class="form-control rounded-3" name="Tárgy" placeholder="Tárgy"
-                            required>
-                    </div>
-                    <div class="form-group col-md-12">
-                        <textarea class="form-control rounded-3" id="confirmationForm" name="Üzenet" cols="30"
-                            rows="10" placeholder="Az Ön üzenete..." required></textarea>
-                    </div>
-                    <div class="text-center">
-                        <button class="btn btn-main text-white" type="submit"><span>Küldés</span></button>
-                    </div>
-                    </form>
-                </div>    
-            </div>
-        </div>
-    </section>
+                </div>
+        </section>
 
 
- 
-    
-    <!-- <div class="row bg-transparent pt-5 mt-5 text-navy text-center">
-        <div class="col-md-6">
-            <a href="https://github.com/MatyasVizer"
-                onclick="javascript:windows.open('link', [options]);" class="link-light">Copyright
-                ® 2022 Mátyás Vizér</a>
-        </div>
-        <div class="col-md-6">
-            <a href="https://www.malerei-gal.at/doc/privacypolicy.pdf" target="_blank"
-                type="application/pdf" rel="noopener noreferrer" class="link-light">
-                Adatvédelmi nyilatkozat
-            </a>
-        </div>
-    </div> -->
+
 
     </main>
 
